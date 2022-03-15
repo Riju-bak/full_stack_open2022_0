@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>My test page</title>
+    </head>
+    <body>
+        <h1>Mozilla is ok</h1>
+        <img src="images/firefox-icon.png" alt="My test image" class="logo">
+        <p>At Mozilla we are a group of</p>
+        <ul>
+            <li>technologists</li>
+            <li>thinkers</li>
+            <li>builders</li>
+        </ul>
+        <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+        <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn more</p>
+        <form action="/my-handling-form-page" method="post">
+<!--            The form data is sent to the server as name/value pairs.-->
+            <ul>
+                <li>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" name="user_email">
+                </li>
+                <li>
+                    <label for="msg">Message: </label>
+                    <textarea name="user_message" id="msg">by default this element is filled with this text</textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Send</button>
+                </li>
+            </ul>
+        </form>
+    </body>
+</html>
